@@ -1,0 +1,110 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+  
+nav{
+  width: 100%;
+  height: 75px;
+  line-height: 75px;
+  padding: 0px 100px;
+  position: fixed;
+  background-image: linear-gradient(red, green);
+}
+nav .logo h2{
+  font-size: 30px;
+  font-weight: bolder;
+  float: left;
+  color: violet;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+nav .Recipe {
+  font-size: 30px;
+  font-weight: bolder;
+  float: right;
+  color: yellow;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+nav ul{
+  float: right;
+ 
+}
+nav li {
+  display: inline;
+  List-style: none;
+}
+
+nav li a{
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 30px;
+  color: yellowgreen;
+  text-decoration: none;
+}
+nav li a:hover{
+  color: #ff8c69;
+  transition: all 0.4% ease 0%;
+}
+.items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 20px;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+
+}
+.recipe {
+  background-color: #ff8c69;
+}
+.recipe img{
+   width: 80%;
+   height: 150px;
+   margin-top: 80px;
+   margin-bottom: 80px;
+   margin-right: 140px;
+   margin-left: 70px;
+   object-fit: cover;
+   cursor: pointer;
+   transition: 0.2s ease;
+}
+.items img:hover {
+   transform: scale(1.04);
+}
+.recipe h4 {
+  padding: 5px;
+  text-align: center;
+}
+.recipe button{
+  padding: 5px 30px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+  display: block;
+  margin: 0 auto;
+  transition: 0.2s all;
+}
+.recipe button:hover{
+  transform: scale(1.08);
+}
+@media screen and (max-width: 1000px) {
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
